@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo jQuery - Manipulación del DOM</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header class="header">
+            <h1 id="titulo-principal">🎓 Aprende jQuery</h1>
+            <p class="subtitulo">Manipulación del DOM de forma sencilla</p>
+        </header>
+
+        <!-- Sección de botones de demostración -->
+        <section class="seccion-botones">
+            <h2>🎮 Controles Interactivos</h2>
+            <div class="grid-botones">
+                <button id="btn-cambiar-texto" class="btn btn-primary">Cambiar Texto</button>
+                <button id="btn-cambiar-color" class="btn btn-success">Cambiar Color</button>
+                <button id="btn-ocultar" class="btn btn-warning">Ocultar/Mostrar</button>
+                <button id="btn-animar" class="btn btn-info">Animar</button>
+                <button id="btn-agregar" class="btn btn-secondary">Agregar Elemento</button>
+                <button id="btn-eliminar" class="btn btn-danger">Eliminar Último</button>
+            </div>
+        </section>
+
+        <!-- Área de demostración -->
+        <section class="area-demo">
+            <h2>📺 Área de Demostración</h2>
+            <div id="caja-demo" class="caja-demo">
+                <p class="texto-demo">¡Haz clic en los botones para ver la magia de jQuery!</p>
+            </div>
+        </section>
+
+        <!-- Lista dinámica -->
+        <section class="seccion-lista">
+            <h2>📝 Lista Dinámica</h2>
+            <div class="input-group">
+                <input type="text" id="input-tarea" class="input-texto" placeholder="Escribe algo aquí...">
+                <button id="btn-agregar-lista" class="btn btn-primary">Agregar a Lista</button>
+            </div>
+            <ul id="lista-tareas" class="lista-tareas">
+                <li class="item-lista">Elemento de ejemplo 1</li>
+                <li class="item-lista">Elemento de ejemplo 2</li>
+                <li class="item-lista">Elemento de ejemplo 3</li>
+            </ul>
+        </section>
+
+        <!-- Contador -->
+        <section class="seccion-contador">
+            <h2>🔢 Contador Interactivo</h2>
+            <div class="contador-display">
+                <span id="numero-contador">0</span>
+            </div>
+            <div class="contador-botones">
+                <button id="btn-decrementar" class="btn btn-danger">−</button>
+                <button id="btn-resetear" class="btn btn-secondary">Reset</button>
+                <button id="btn-incrementar" class="btn btn-success">+</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Proyecto educativo para aprender jQuery 💻</p>
+        </footer>
+    </div>
+
+    <!-- jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Nuestro archivo JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
